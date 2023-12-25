@@ -23,6 +23,7 @@
                window.location.href = "unitydl://mylink?parameter";
            }
        </script>
+        <link rel="apple-app-site-association" href="/.well-known/apple-app-site-association">
     </head>
     <body>
        <h1>My Deep Link Test page</h1>
@@ -34,14 +35,7 @@
        <p><a href="unitydl://CyclingBiking">骑自行车</a></p>
        <p><a href="unitydl://MiniSquat">小蹲</a></p>
        <p><a href="unitydl://MahjongPairMatching">麻将配对</a></p>
-        <script>
-           document.addEventListener("DOMContentLoaded", function() {
-               var link = document.createElement('link');
-               link.rel = 'apple-app-site-association';
-               link.href = '.well-known/apple-app-site-association.json';
-               document.head.appendChild(link);
-           });
-       </script>
+        
     </body>
 </html>
 
